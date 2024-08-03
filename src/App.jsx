@@ -6,10 +6,14 @@ import CartPage from './pages/cart/CartPage';
 import ContactPage from './pages/contact/ContactPage';
 import AboutPage from './pages/about/AboutPage';
 import Navbar from './components/navbar/Navbar';
+import { useEffect } from 'react';
+import { useSelector } from 'react-redux';
 
 function App() {
-
-
+const {theme}=useSelector(store=>store.global)
+useEffect(() => {
+document.body.classList.toggle('dark')
+}, [theme]);
   return (
     <>
     <Navbar />

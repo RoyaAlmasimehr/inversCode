@@ -16,7 +16,7 @@ const {theme}=useSelector(store=>store.global)
 
     return (
       <>
-        <div className={`navbarContainer ${theme}`} >
+        <div className={`navbarContainer ${theme}`}>
           <div className="navbar container">
             <ul>
               <li>
@@ -38,7 +38,11 @@ const {theme}=useSelector(store=>store.global)
                 <span>5</span>
               </span>
               <span className="darkModeIcon">
-                <MdOutlineDarkMode size="25px"  onClick={changeTheme }     />
+                {theme == "light" ? (
+                  <MdOutlineDarkMode size="25px" onClick={changeTheme} />
+                ) : (
+                  <MdOutlineLightMode size="25px" onClick={changeTheme} />
+                 )}
               </span>
             </div>
           </div>
