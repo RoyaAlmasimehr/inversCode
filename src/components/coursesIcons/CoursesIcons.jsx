@@ -8,11 +8,15 @@ import { SiMongodb } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
 
 import "./CoursesIcons.css";
+import { useSelector } from "react-redux";
 
 function CoursesIcons() {
+
+const{theme}=useSelector(store=>store.global)
+
   return (
     <>
-      <div className="coursesIconContainer">
+      <div className={`coursesIconContainer ${theme}`}>
         <div className="container">
           <h2>دنبال چه آموزشی میگردی؟</h2>
           <div className="courseIconsList">

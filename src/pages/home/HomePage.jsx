@@ -1,5 +1,7 @@
 
 import CoursesIcons from '../../components/coursesIcons/CoursesIcons'
+import FeatureList from '../../components/features/FeatureList';
+
 import './HomePage.css'
 
 function  HomePage() {
@@ -7,6 +9,7 @@ function  HomePage() {
 <>
 
 <CoursesIcons />
+<FeatureList />
 </>
       );
 }

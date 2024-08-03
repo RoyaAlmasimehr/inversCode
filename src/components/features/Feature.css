@@ -1,0 +1,55 @@
+:root {
+  --color-orange: #fdcc75;
+  --bg-dark-100: rgb(51, 60, 76);
+  --bg-dark-200: rgb(36, 42, 56);
+  --bg-dark-300: rgb(17, 24, 39);
+
+  --text-dark-100: rgb(255, 255, 255);
+  --text-dark-200: rgb(158, 175, 201);
+  --text-dark-300: rgb(17, 24, 39);
+
+  --bg-light-100: rgb(204, 205, 205);
+  --bg-light-200: rgb(245, 245, 245);
+}
+
+.featureContainer{
+  border-radius: 10px;
+  padding: 16px 20px;
+}
+
+.icon {
+  font-size: 80px;
+  background-color: rgb(243, 244, 246);
+  color: rgb(92, 92, 92);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+ h2 {
+  margin-bottom: 16px;
+}
+
+p {
+  color: rgb(89, 89, 89);
+  text-align: justify;
+}
+
+.featureContainer.dark {
+  background-color: rgb(36, 42, 56);
+}
+.dark .icon {
+  background-color: var(--bg-dark-100);
+  color: var(--color-orange);
+}
+.dark h2 {
+  color: #fff;
+}
+
+ .dark p {
+  color: rgb(126, 139, 158);
+}

@@ -1,0 +1,12 @@
+
+.featureListContainer{
+    padding: 16px 0;
+
+}
+
+.featureList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px ;
+}
